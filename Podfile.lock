@@ -1,0 +1,12 @@
+PODS:
+  - MirrorDiffKit (0.0.1)
+
+DEPENDENCIES:
+  - MirrorDiffKit (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  MirrorDiffKit: 29f878ce79983e4605759ba725cb7ddb55665cb3
+
+PODFILE CHECKSUM: 7628432b6ef27329b60ada1bb5f4c49b6e32f111
+
+COCOAPODS: 1.2.0

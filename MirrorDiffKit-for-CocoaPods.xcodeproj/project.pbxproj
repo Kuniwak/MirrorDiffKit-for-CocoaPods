@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0355C1E42AD4AC787AA96AE7 /* Pods_MirrorDiffKit_for_CocoaPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFEFE722893B1FFC3914194 /* Pods_MirrorDiffKit_for_CocoaPods.framework */; };
+		2475E0AB304D50A57C78F897 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2475E4EDADC4E6B314285E46 /* Main.storyboard */; };
+		2475E1238E3A0F471E035DF7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2475E82F44E568821ACF0049 /* Info.plist */; };
+		2475E26B917B0CCDA12CD61D /* MirrorDiffKit_for_CocoaPodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475E30453207EBD49BE0ED6 /* MirrorDiffKit_for_CocoaPodsTests.swift */; };
+		2475E3DD91C07A06C0799F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2475E82B17E755440DCD9666 /* Assets.xcassets */; };
+		2475E4D79E49F9599C307E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EF9644D9AE78AD24E8F4 /* ViewController.swift */; };
+		2475ED6C37E1DA366E1EFA39 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2475E28310D5D02CC532088F /* Info.plist */; };
+		2475EE04F3DD81720F9EE1BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475EE3F7247E622E070F809 /* AppDelegate.swift */; };
+		2475EFB21293C8311F4A10EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2475EE92120587A8E477E068 /* LaunchScreen.storyboard */; };
+		E193C8C4107854ABDD9E8A9F /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98AC3A0FB9B002B92C161A81 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2475E457D18633DC114971B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2475E1DD0AB4E34BA777ACDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2475E497B7E2EF96D3628544;
+			remoteInfo = "MirrorDiffKit-for-CocoaPods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2475E28310D5D02CC532088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		2475E30453207EBD49BE0ED6 /* MirrorDiffKit_for_CocoaPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorDiffKit_for_CocoaPodsTests.swift; sourceTree = "<group>"; };
+		2475E5CBD1257256A18903E2 /* MirrorDiffKit-for-CocoaPodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MirrorDiffKit-for-CocoaPodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2475E82B17E755440DCD9666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2475E82F44E568821ACF0049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		2475EB11FAC50C2AC5992B6F /* MirrorDiffKit-for-CocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MirrorDiffKit-for-CocoaPods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2475EE3F7247E622E070F809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2475EE6413BD91599B10BB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2475EF9644D9AE78AD24E8F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2475EF9A4AF996681DF7E9F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61DCA350C8D9BDCC3FE35529 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig"; sourceTree = "<group>"; };
+		64562EC11A75A938AED13E9B /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C165EC545EF07298A21BC92 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		6EFEFE722893B1FFC3914194 /* Pods_MirrorDiffKit_for_CocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorDiffKit_for_CocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98AC3A0FB9B002B92C161A81 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MirrorDiffKit_for_CocoaPodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E133935DEA000A6C5B9746D3 /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2475E39F91BBFBDB35CBDF33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E193C8C4107854ABDD9E8A9F /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2475EE5503E1F0A174B27CC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0355C1E42AD4AC787AA96AE7 /* Pods_MirrorDiffKit_for_CocoaPods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2475E28047DB807CD1DEF788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2475EB11FAC50C2AC5992B6F /* MirrorDiffKit-for-CocoaPods.app */,
+				2475E5CBD1257256A18903E2 /* MirrorDiffKit-for-CocoaPodsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2475E4FB99921E1C043F970C = {
+			isa = PBXGroup;
+			children = (
+				2475E28047DB807CD1DEF788 /* Products */,
+				2475EC78C0DEC3794C68124A /* MirrorDiffKit-for-CocoaPods */,
+				2475E969D86B1339363A4FC0 /* MirrorDiffKit-for-CocoaPodsTests */,
+				E9A9D32E373B523FA496E3E1 /* Pods */,
+				8EB996519D7928F56DAEFE2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2475E969D86B1339363A4FC0 /* MirrorDiffKit-for-CocoaPodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2475E28310D5D02CC532088F /* Info.plist */,
+				2475E30453207EBD49BE0ED6 /* MirrorDiffKit_for_CocoaPodsTests.swift */,
+			);
+			path = "MirrorDiffKit-for-CocoaPodsTests";
+			sourceTree = "<group>";
+		};
+		2475EC78C0DEC3794C68124A /* MirrorDiffKit-for-CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				2475E82F44E568821ACF0049 /* Info.plist */,
+				2475E82B17E755440DCD9666 /* Assets.xcassets */,
+				2475EE92120587A8E477E068 /* LaunchScreen.storyboard */,
+				2475EE3F7247E622E070F809 /* AppDelegate.swift */,
+				2475E4EDADC4E6B314285E46 /* Main.storyboard */,
+				2475EF9644D9AE78AD24E8F4 /* ViewController.swift */,
+			);
+			path = "MirrorDiffKit-for-CocoaPods";
+			sourceTree = "<group>";
+		};
+		8EB996519D7928F56DAEFE2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EFEFE722893B1FFC3914194 /* Pods_MirrorDiffKit_for_CocoaPods.framework */,
+				98AC3A0FB9B002B92C161A81 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9A9D32E373B523FA496E3E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E133935DEA000A6C5B9746D3 /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */,
+				6C165EC545EF07298A21BC92 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */,
+				64562EC11A75A938AED13E9B /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */,
+				61DCA350C8D9BDCC3FE35529 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2475E497B7E2EF96D3628544 /* MirrorDiffKit-for-CocoaPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2475E1411041280CE65AC06A /* Build configuration list for PBXNativeTarget "MirrorDiffKit-for-CocoaPods" */;
+			buildPhases = (
+				18017E3D7CE6478C75328201 /* [CP] Check Pods Manifest.lock */,
+				2475E71299930432BC5B97A8 /* Sources */,
+				2475EE5503E1F0A174B27CC5 /* Frameworks */,
+				2475E4158ECC560FDD56BF0F /* Resources */,
+				B6C4937D607438BE5B6C345C /* [CP] Embed Pods Frameworks */,
+				32042D9F41781E93A5475786 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MirrorDiffKit-for-CocoaPods";
+			productName = "MirrorDiffKit-for-CocoaPods";
+			productReference = 2475EB11FAC50C2AC5992B6F /* MirrorDiffKit-for-CocoaPods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2475EC046BFEE0164214875A /* MirrorDiffKit-for-CocoaPodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2475EF7B204C1B3E85F78D0D /* Build configuration list for PBXNativeTarget "MirrorDiffKit-for-CocoaPodsTests" */;
+			buildPhases = (
+				5DBBB7F6F4F9F67CFC6D865D /* [CP] Check Pods Manifest.lock */,
+				2475E57E884EEEC24AF483FC /* Sources */,
+				2475E39F91BBFBDB35CBDF33 /* Frameworks */,
+				2475E5F17EF6615E947A24B3 /* Resources */,
+				03A005A4F90D6BE2FCA79839 /* [CP] Embed Pods Frameworks */,
+				92CDEB61D80CDECEEA422CA9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2475E1ECABD69F0724B8A72C /* PBXTargetDependency */,
+			);
+			name = "MirrorDiffKit-for-CocoaPodsTests";
+			productName = "MirrorDiffKit-for-CocoaPodsTests";
+			productReference = 2475E5CBD1257256A18903E2 /* MirrorDiffKit-for-CocoaPodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2475E1DD0AB4E34BA777ACDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Kuniwak;
+			};
+			buildConfigurationList = 2475E067BE609B8CF78ACB64 /* Build configuration list for PBXProject "MirrorDiffKit-for-CocoaPods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2475E4FB99921E1C043F970C;
+			productRefGroup = 2475E28047DB807CD1DEF788 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2475E497B7E2EF96D3628544 /* MirrorDiffKit-for-CocoaPods */,
+				2475EC046BFEE0164214875A /* MirrorDiffKit-for-CocoaPodsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2475E4158ECC560FDD56BF0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2475E1238E3A0F471E035DF7 /* Info.plist in Resources */,
+				2475E3DD91C07A06C0799F0C /* Assets.xcassets in Resources */,
+				2475EFB21293C8311F4A10EF /* LaunchScreen.storyboard in Resources */,
+				2475E0AB304D50A57C78F897 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2475E5F17EF6615E947A24B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2475ED6C37E1DA366E1EFA39 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A005A4F90D6BE2FCA79839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18017E3D7CE6478C75328201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32042D9F41781E93A5475786 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DBBB7F6F4F9F67CFC6D865D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92CDEB61D80CDECEEA422CA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C4937D607438BE5B6C345C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2475E57E884EEEC24AF483FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2475E26B917B0CCDA12CD61D /* MirrorDiffKit_for_CocoaPodsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2475E71299930432BC5B97A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2475EE04F3DD81720F9EE1BA /* AppDelegate.swift in Sources */,
+				2475E4D79E49F9599C307E50 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2475E1ECABD69F0724B8A72C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2475E497B7E2EF96D3628544 /* MirrorDiffKit-for-CocoaPods */;
+			targetProxy = 2475E457D18633DC114971B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2475E4EDADC4E6B314285E46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2475EE6413BD91599B10BB33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2475EE92120587A8E477E068 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2475EF9A4AF996681DF7E9F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2475E33E1D61AEEB53F3F539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C165EC545EF07298A21BC92 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MirrorDiffKit-for-CocoaPods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MirrorDiffKit-for-CocoaPods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2475E61451E4EFE75FCC3EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64562EC11A75A938AED13E9B /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MirrorDiffKit-for-CocoaPods.app/MirrorDiffKit-for-CocoaPods";
+				INFOPLIST_FILE = "MirrorDiffKit-for-CocoaPodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MirrorDiffKit-for-CocoaPodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		2475E7BD18439E55063D5F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DCA350C8D9BDCC3FE35529 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MirrorDiffKit-for-CocoaPods.app/MirrorDiffKit-for-CocoaPods";
+				INFOPLIST_FILE = "MirrorDiffKit-for-CocoaPodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MirrorDiffKit-for-CocoaPodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		2475E8A88BD1FF176D7DD3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2475E96080A323026FB76D26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E133935DEA000A6C5B9746D3 /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MirrorDiffKit-for-CocoaPods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kuniwak.MirrorDiffKit-for-CocoaPods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2475EA734E1DC6F2EB6EDB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2475E067BE609B8CF78ACB64 /* Build configuration list for PBXProject "MirrorDiffKit-for-CocoaPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2475EA734E1DC6F2EB6EDB36 /* Debug */,
+				2475E8A88BD1FF176D7DD3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2475E1411041280CE65AC06A /* Build configuration list for PBXNativeTarget "MirrorDiffKit-for-CocoaPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2475E96080A323026FB76D26 /* Debug */,
+				2475E33E1D61AEEB53F3F539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2475EF7B204C1B3E85F78D0D /* Build configuration list for PBXNativeTarget "MirrorDiffKit-for-CocoaPodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2475E61451E4EFE75FCC3EE7 /* Debug */,
+				2475E7BD18439E55063D5F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2475E1DD0AB4E34BA777ACDB /* Project object */;
+}

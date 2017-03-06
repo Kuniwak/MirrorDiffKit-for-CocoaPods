@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D7553B48B8EE40843C3CAFF7CF3346 /* DiffableSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8576EA8D284C49DAC0D84F3FEF51EB22 /* DiffableSequence.swift */; };
+		37058AE72834B7D51FAB6D4A8AD35B0C /* DiffableSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D086333349FE752CA169DEC806397C /* DiffableSet.swift */; };
+		39A433608F70137134CB1FD6D27DB332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		43DED57DB11160746E6B16D87258E956 /* Diffable+from.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA195DB52CFCCFFFD24C1393FC18D363 /* Diffable+from.swift */; };
+		614F0828143D3DA65A8D2038F3974B0E /* Diffable+diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C141E1290E3941D5D79300C9D8871 /* Diffable+diff.swift */; };
+		63FFF13F5822AA7B045A31DA07038474 /* Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1594E5E481A9E90A9EF8F4CB19229B44 /* Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		752D73031B0F6BBC3C4D352ACBB3033E /* DiffableDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9847E419FD69E6064B1CB7CACB456F73 /* DiffableDictionary.swift */; };
+		7B2C82D990EF0DD3ED89662816908B35 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6B225B5CB1990C9A793CA885DC4708 /* Util.swift */; };
+		8783BB7F9821899E3F0506259B9F66DD /* Diffable+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69DA867E3BC9941631F92A99D08ACF /* Diffable+CustomStringConvertible.swift */; };
+		A05C661122CF4527CACDC40B9DCA1658 /* MirrorDiffKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E64167D3092B00E620906BCA9485B78 /* MirrorDiffKit-dummy.m */; };
+		A20172613378AB8E802EF217A299A72F /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9565923A24150043C3337D1EAADAC6FA /* Transformer.swift */; };
+		A340BEB48D310C4058B4BDAD12F06719 /* Pods-MirrorDiffKit-for-CocoaPods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C10457FEC2D65E80D52B8CD5523758AB /* Pods-MirrorDiffKit-for-CocoaPods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75EC11F932922F9A02FAA376E47E0B7 /* MirrorDiffKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9D558D16AC463F4F71222211DED8B45 /* MirrorDiffKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABA84D91C6724F6A1344FE6A2473E5CB /* DiffableConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CDA201132BFCBAB8D48D3ACC67F2F5 /* DiffableConvertible.swift */; };
+		B4C9C2BF6815999EA839B20B9CF3F6EB /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE4D4518B84AAD7D721F523F7E58316 /* Dwifft.swift */; };
+		C3E4AADD94E8379679972194663AFEA3 /* Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11350FDB189C535A1CCBB6EF7281A439 /* Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m */; };
+		C958AA90E6CF412964EFE3A0617F234C /* PrettyPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641F27B46128DCEC50B5F73B5722D305 /* PrettyPrintable.swift */; };
+		D8A12AED4566AEE632D22AA9C30A3BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DA5C36778A630BD72EB064EEAC164E03 /* MirrorDiffKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF21E6CF7EA5F4DAB6A8F8E14CE3F13 /* MirrorDiffKit.swift */; };
+		DAE791FAE3AB559386F38334617FB6A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DBC815ED5399A233BB4BE470706BF439 /* RoughEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ACF586FE80C877B2179A18F132D692 /* RoughEquatable.swift */; };
+		F22DA670940A791DA754871213546ABD /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654DE1F9B0BBA8F836717D8F8E1E4930 /* Diffable.swift */; };
+		F52C85D51036C61DA4F86A917945D2E7 /* Pods-MirrorDiffKit-for-CocoaPods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26C99A0D3E083722EB064806283349 /* Pods-MirrorDiffKit-for-CocoaPods-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96ECBB8F890407D7A0BE085A12F090AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F82170726FD8BD2005A0A42A6F91C356;
+			remoteInfo = MirrorDiffKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024250498D28C67113FB3C7164D92B70 /* Pods_MirrorDiffKit_for_CocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorDiffKit_for_CocoaPods.framework; path = "Pods-MirrorDiffKit-for-CocoaPods.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11350FDB189C535A1CCBB6EF7281A439 /* Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m"; sourceTree = "<group>"; };
+		1594E5E481A9E90A9EF8F4CB19229B44 /* Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h"; sourceTree = "<group>"; };
+		16D086333349FE752CA169DEC806397C /* DiffableSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiffableSet.swift; path = Sources/DiffableSet.swift; sourceTree = "<group>"; };
+		1BD5A9A8BCFB5F190E97FD7C9B42F3D2 /* Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C77B7189440A33A5CB878F5A443537F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E6425328E0CFA6AAFD04DA16497366F /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		2AE4D4518B84AAD7D721F523F7E58316 /* Dwifft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dwifft.swift; path = Sources/Dwifft.swift; sourceTree = "<group>"; };
+		32CDA201132BFCBAB8D48D3ACC67F2F5 /* DiffableConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiffableConvertible.swift; path = Sources/DiffableConvertible.swift; sourceTree = "<group>"; };
+		440525CED5D95727BAB346E7AE773DB3 /* Pods-MirrorDiffKit-for-CocoaPodsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-resources.sh"; sourceTree = "<group>"; };
+		4D9C141E1290E3941D5D79300C9D8871 /* Diffable+diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Diffable+diff.swift"; path = "Sources/Diffable+diff.swift"; sourceTree = "<group>"; };
+		4E64167D3092B00E620906BCA9485B78 /* MirrorDiffKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MirrorDiffKit-dummy.m"; sourceTree = "<group>"; };
+		4FDB47CCA000356BF7222E259940F9A1 /* Pods-MirrorDiffKit-for-CocoaPods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorDiffKit-for-CocoaPods-frameworks.sh"; sourceTree = "<group>"; };
+		5996B79E4AD884CF1B08BF3060A47E32 /* MirrorDiffKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MirrorDiffKit.framework; path = MirrorDiffKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641F27B46128DCEC50B5F73B5722D305 /* PrettyPrintable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrettyPrintable.swift; path = Sources/PrettyPrintable.swift; sourceTree = "<group>"; };
+		654DE1F9B0BBA8F836717D8F8E1E4930 /* Diffable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffable.swift; path = Sources/Diffable.swift; sourceTree = "<group>"; };
+		6A02E0CAC6FFBEA1730379A3241312BF /* Pods-MirrorDiffKit-for-CocoaPods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorDiffKit-for-CocoaPods-resources.sh"; sourceTree = "<group>"; };
+		6A746F35F48702360F1FC45764BB4FE5 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MirrorDiffKit_for_CocoaPodsTests.framework; path = "Pods-MirrorDiffKit-for-CocoaPodsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BC4DA25AC4502B9955CBB261984803 /* Pods-MirrorDiffKit-for-CocoaPodsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-frameworks.sh"; sourceTree = "<group>"; };
+		8122347FE54F6237405242F5378CD625 /* MirrorDiffKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MirrorDiffKit.xcconfig; sourceTree = "<group>"; };
+		8576EA8D284C49DAC0D84F3FEF51EB22 /* DiffableSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiffableSequence.swift; path = Sources/DiffableSequence.swift; sourceTree = "<group>"; };
+		892E8988691F98CDC81A5F3EF69B44EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AECF1FADAA8BDD3A8B12970976AFC88 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		90614957FC2CD1392F86B30899A8A0DC /* MirrorDiffKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MirrorDiffKit-prefix.pch"; sourceTree = "<group>"; };
+		90A6899941A04AF0B2C0E7A96DFE781E /* MirrorDiffKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MirrorDiffKit.modulemap; sourceTree = "<group>"; };
+		91BFA41BD92206D931DA3F0F3587BD27 /* Pods-MirrorDiffKit-for-CocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MirrorDiffKit-for-CocoaPods.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9565923A24150043C3337D1EAADAC6FA /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Sources/Transformer.swift; sourceTree = "<group>"; };
+		9847E419FD69E6064B1CB7CACB456F73 /* DiffableDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiffableDictionary.swift; path = Sources/DiffableDictionary.swift; sourceTree = "<group>"; };
+		9FF21E6CF7EA5F4DAB6A8F8E14CE3F13 /* MirrorDiffKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MirrorDiffKit.swift; path = Sources/MirrorDiffKit.swift; sourceTree = "<group>"; };
+		A3ACF586FE80C877B2179A18F132D692 /* RoughEquatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoughEquatable.swift; path = Sources/RoughEquatable.swift; sourceTree = "<group>"; };
+		A9D22384745ACBE2DA283F62FA885DD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B700952AB3B6BEF66B27EBBDA977708D /* Pods-MirrorDiffKit-for-CocoaPodsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MirrorDiffKit-for-CocoaPodsTests.modulemap"; sourceTree = "<group>"; };
+		BA195DB52CFCCFFFD24C1393FC18D363 /* Diffable+from.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Diffable+from.swift"; path = "Sources/Diffable+from.swift"; sourceTree = "<group>"; };
+		BA69DA867E3BC9941631F92A99D08ACF /* Diffable+CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Diffable+CustomStringConvertible.swift"; path = "Sources/Diffable+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		C10457FEC2D65E80D52B8CD5523758AB /* Pods-MirrorDiffKit-for-CocoaPods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MirrorDiffKit-for-CocoaPods-umbrella.h"; sourceTree = "<group>"; };
+		CA6B225B5CB1990C9A793CA885DC4708 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = Sources/Util.swift; sourceTree = "<group>"; };
+		CA752F8787DEBE4AD3BBE48312771791 /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D646E464ABDAFB3995BCD27539D2E4B8 /* Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.plist"; sourceTree = "<group>"; };
+		D691A39790CB0D40C60F4EAF82D65DCD /* Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD26C99A0D3E083722EB064806283349 /* Pods-MirrorDiffKit-for-CocoaPods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MirrorDiffKit-for-CocoaPods-dummy.m"; sourceTree = "<group>"; };
+		E9D558D16AC463F4F71222211DED8B45 /* MirrorDiffKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MirrorDiffKit-umbrella.h"; sourceTree = "<group>"; };
+		FD2E517A50EBEA463388F811F0F78ED0 /* Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD3F736D26374ED7F8B5130478E54072 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03097D35FE33667358F57DEB3749B491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A12AED4566AEE632D22AA9C30A3BCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D522466FC41A72ED2C96CF0104CC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A433608F70137134CB1FD6D27DB332 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF54EC13B0B4681F648839EBBD2E4838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE791FAE3AB559386F38334617FB6A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A5467C3F0E74074A3018ED9CCD79570 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				539BD8035208EDD21930F36DEA23639A /* Pods-MirrorDiffKit-for-CocoaPods */,
+				96308F5B01438364663D85B16A4DF122 /* Pods-MirrorDiffKit-for-CocoaPodsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		539BD8035208EDD21930F36DEA23639A /* Pods-MirrorDiffKit-for-CocoaPods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D22384745ACBE2DA283F62FA885DD2 /* Info.plist */,
+				91BFA41BD92206D931DA3F0F3587BD27 /* Pods-MirrorDiffKit-for-CocoaPods.modulemap */,
+				D691A39790CB0D40C60F4EAF82D65DCD /* Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.markdown */,
+				D646E464ABDAFB3995BCD27539D2E4B8 /* Pods-MirrorDiffKit-for-CocoaPods-acknowledgements.plist */,
+				DD26C99A0D3E083722EB064806283349 /* Pods-MirrorDiffKit-for-CocoaPods-dummy.m */,
+				4FDB47CCA000356BF7222E259940F9A1 /* Pods-MirrorDiffKit-for-CocoaPods-frameworks.sh */,
+				6A02E0CAC6FFBEA1730379A3241312BF /* Pods-MirrorDiffKit-for-CocoaPods-resources.sh */,
+				C10457FEC2D65E80D52B8CD5523758AB /* Pods-MirrorDiffKit-for-CocoaPods-umbrella.h */,
+				1E6425328E0CFA6AAFD04DA16497366F /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */,
+				8AECF1FADAA8BDD3A8B12970976AFC88 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */,
+			);
+			name = "Pods-MirrorDiffKit-for-CocoaPods";
+			path = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPods";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F85DC64621D135B4D14BE048D0C649F2 /* Pods */,
+				E8358865791A441F1AF0053740ECE22E /* Products */,
+				3A5467C3F0E74074A3018ED9CCD79570 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		94C9CE9C9B0571ED56A7D422C6289819 /* MirrorDiffKit */ = {
+			isa = PBXGroup;
+			children = (
+				654DE1F9B0BBA8F836717D8F8E1E4930 /* Diffable.swift */,
+				BA69DA867E3BC9941631F92A99D08ACF /* Diffable+CustomStringConvertible.swift */,
+				4D9C141E1290E3941D5D79300C9D8871 /* Diffable+diff.swift */,
+				BA195DB52CFCCFFFD24C1393FC18D363 /* Diffable+from.swift */,
+				32CDA201132BFCBAB8D48D3ACC67F2F5 /* DiffableConvertible.swift */,
+				9847E419FD69E6064B1CB7CACB456F73 /* DiffableDictionary.swift */,
+				8576EA8D284C49DAC0D84F3FEF51EB22 /* DiffableSequence.swift */,
+				16D086333349FE752CA169DEC806397C /* DiffableSet.swift */,
+				2AE4D4518B84AAD7D721F523F7E58316 /* Dwifft.swift */,
+				9FF21E6CF7EA5F4DAB6A8F8E14CE3F13 /* MirrorDiffKit.swift */,
+				641F27B46128DCEC50B5F73B5722D305 /* PrettyPrintable.swift */,
+				A3ACF586FE80C877B2179A18F132D692 /* RoughEquatable.swift */,
+				9565923A24150043C3337D1EAADAC6FA /* Transformer.swift */,
+				CA6B225B5CB1990C9A793CA885DC4708 /* Util.swift */,
+				A966D6CDA2C6311B73CBA8C4F1D90EC6 /* Support Files */,
+			);
+			name = MirrorDiffKit;
+			path = MirrorDiffKit;
+			sourceTree = "<group>";
+		};
+		96308F5B01438364663D85B16A4DF122 /* Pods-MirrorDiffKit-for-CocoaPodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C77B7189440A33A5CB878F5A443537F /* Info.plist */,
+				B700952AB3B6BEF66B27EBBDA977708D /* Pods-MirrorDiffKit-for-CocoaPodsTests.modulemap */,
+				1BD5A9A8BCFB5F190E97FD7C9B42F3D2 /* Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.markdown */,
+				FD2E517A50EBEA463388F811F0F78ED0 /* Pods-MirrorDiffKit-for-CocoaPodsTests-acknowledgements.plist */,
+				11350FDB189C535A1CCBB6EF7281A439 /* Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m */,
+				73BC4DA25AC4502B9955CBB261984803 /* Pods-MirrorDiffKit-for-CocoaPodsTests-frameworks.sh */,
+				440525CED5D95727BAB346E7AE773DB3 /* Pods-MirrorDiffKit-for-CocoaPodsTests-resources.sh */,
+				1594E5E481A9E90A9EF8F4CB19229B44 /* Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h */,
+				CA752F8787DEBE4AD3BBE48312771791 /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */,
+				FD3F736D26374ED7F8B5130478E54072 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */,
+			);
+			name = "Pods-MirrorDiffKit-for-CocoaPodsTests";
+			path = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests";
+			sourceTree = "<group>";
+		};
+		A966D6CDA2C6311B73CBA8C4F1D90EC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				892E8988691F98CDC81A5F3EF69B44EA /* Info.plist */,
+				90A6899941A04AF0B2C0E7A96DFE781E /* MirrorDiffKit.modulemap */,
+				8122347FE54F6237405242F5378CD625 /* MirrorDiffKit.xcconfig */,
+				4E64167D3092B00E620906BCA9485B78 /* MirrorDiffKit-dummy.m */,
+				90614957FC2CD1392F86B30899A8A0DC /* MirrorDiffKit-prefix.pch */,
+				E9D558D16AC463F4F71222211DED8B45 /* MirrorDiffKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MirrorDiffKit";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8358865791A441F1AF0053740ECE22E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5996B79E4AD884CF1B08BF3060A47E32 /* MirrorDiffKit.framework */,
+				024250498D28C67113FB3C7164D92B70 /* Pods_MirrorDiffKit_for_CocoaPods.framework */,
+				6A746F35F48702360F1FC45764BB4FE5 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85DC64621D135B4D14BE048D0C649F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94C9CE9C9B0571ED56A7D422C6289819 /* MirrorDiffKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4EDA339A95F98670201CCF6F4FA54FE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A340BEB48D310C4058B4BDAD12F06719 /* Pods-MirrorDiffKit-for-CocoaPods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54B9882BE97E739EE346FD4442E54064 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75EC11F932922F9A02FAA376E47E0B7 /* MirrorDiffKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB4C67769A56B3102B57E9F1FC167D28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FFF13F5822AA7B045A31DA07038474 /* Pods-MirrorDiffKit-for-CocoaPodsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E3FCC822B5B4E8444399AC417D9A57B /* Pods-MirrorDiffKit-for-CocoaPods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0DDE4B7D2D8C266949272D25F7707E /* Build configuration list for PBXNativeTarget "Pods-MirrorDiffKit-for-CocoaPods" */;
+			buildPhases = (
+				275FC3A7046479A6EF699487D1FEF6E6 /* Sources */,
+				03097D35FE33667358F57DEB3749B491 /* Frameworks */,
+				4EDA339A95F98670201CCF6F4FA54FE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4248C8E2FAFFB7AB5EFE7E0C3474FFF /* PBXTargetDependency */,
+			);
+			name = "Pods-MirrorDiffKit-for-CocoaPods";
+			productName = "Pods-MirrorDiffKit-for-CocoaPods";
+			productReference = 024250498D28C67113FB3C7164D92B70 /* Pods_MirrorDiffKit_for_CocoaPods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5973975D283818E9F077035A06118F6 /* Pods-MirrorDiffKit-for-CocoaPodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078CE68FBEA8B4AEC20AECB129487584 /* Build configuration list for PBXNativeTarget "Pods-MirrorDiffKit-for-CocoaPodsTests" */;
+			buildPhases = (
+				39080089E5F7852155DCEAC8283F52B3 /* Sources */,
+				46D522466FC41A72ED2C96CF0104CC49 /* Frameworks */,
+				CB4C67769A56B3102B57E9F1FC167D28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MirrorDiffKit-for-CocoaPodsTests";
+			productName = "Pods-MirrorDiffKit-for-CocoaPodsTests";
+			productReference = 6A746F35F48702360F1FC45764BB4FE5 /* Pods_MirrorDiffKit_for_CocoaPodsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F82170726FD8BD2005A0A42A6F91C356 /* MirrorDiffKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9C35E8868A1D315FEB80D0C2CA556D /* Build configuration list for PBXNativeTarget "MirrorDiffKit" */;
+			buildPhases = (
+				50077F10DA3444CA6B1C2717B035DF58 /* Sources */,
+				CF54EC13B0B4681F648839EBBD2E4838 /* Frameworks */,
+				54B9882BE97E739EE346FD4442E54064 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MirrorDiffKit;
+			productName = MirrorDiffKit;
+			productReference = 5996B79E4AD884CF1B08BF3060A47E32 /* MirrorDiffKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E8358865791A441F1AF0053740ECE22E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82170726FD8BD2005A0A42A6F91C356 /* MirrorDiffKit */,
+				3E3FCC822B5B4E8444399AC417D9A57B /* Pods-MirrorDiffKit-for-CocoaPods */,
+				F5973975D283818E9F077035A06118F6 /* Pods-MirrorDiffKit-for-CocoaPodsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275FC3A7046479A6EF699487D1FEF6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52C85D51036C61DA4F86A917945D2E7 /* Pods-MirrorDiffKit-for-CocoaPods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39080089E5F7852155DCEAC8283F52B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E4AADD94E8379679972194663AFEA3 /* Pods-MirrorDiffKit-for-CocoaPodsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50077F10DA3444CA6B1C2717B035DF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8783BB7F9821899E3F0506259B9F66DD /* Diffable+CustomStringConvertible.swift in Sources */,
+				614F0828143D3DA65A8D2038F3974B0E /* Diffable+diff.swift in Sources */,
+				43DED57DB11160746E6B16D87258E956 /* Diffable+from.swift in Sources */,
+				F22DA670940A791DA754871213546ABD /* Diffable.swift in Sources */,
+				ABA84D91C6724F6A1344FE6A2473E5CB /* DiffableConvertible.swift in Sources */,
+				752D73031B0F6BBC3C4D352ACBB3033E /* DiffableDictionary.swift in Sources */,
+				07D7553B48B8EE40843C3CAFF7CF3346 /* DiffableSequence.swift in Sources */,
+				37058AE72834B7D51FAB6D4A8AD35B0C /* DiffableSet.swift in Sources */,
+				B4C9C2BF6815999EA839B20B9CF3F6EB /* Dwifft.swift in Sources */,
+				A05C661122CF4527CACDC40B9DCA1658 /* MirrorDiffKit-dummy.m in Sources */,
+				DA5C36778A630BD72EB064EEAC164E03 /* MirrorDiffKit.swift in Sources */,
+				C958AA90E6CF412964EFE3A0617F234C /* PrettyPrintable.swift in Sources */,
+				DBC815ED5399A233BB4BE470706BF439 /* RoughEquatable.swift in Sources */,
+				A20172613378AB8E802EF217A299A72F /* Transformer.swift in Sources */,
+				7B2C82D990EF0DD3ED89662816908B35 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4248C8E2FAFFB7AB5EFE7E0C3474FFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MirrorDiffKit;
+			target = F82170726FD8BD2005A0A42A6F91C356 /* MirrorDiffKit */;
+			targetProxy = 96ECBB8F890407D7A0BE085A12F090AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EFD68F0616F4A2EF00C825C701A5F92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8122347FE54F6237405242F5378CD625 /* MirrorDiffKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MirrorDiffKit/MirrorDiffKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MirrorDiffKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MirrorDiffKit/MirrorDiffKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MirrorDiffKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E10E9A2AA824608F2B99EACE45E1568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3F736D26374ED7F8B5130478E54072 /* Pods-MirrorDiffKit-for-CocoaPodsTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MirrorDiffKit_for_CocoaPodsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5CE3F8972E096E64CC13A38EBFFE8B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AECF1FADAA8BDD3A8B12970976AFC88 /* Pods-MirrorDiffKit-for-CocoaPods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MirrorDiffKit_for_CocoaPods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FAF67D8064BCE92D4A268B8D768601B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8122347FE54F6237405242F5378CD625 /* MirrorDiffKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MirrorDiffKit/MirrorDiffKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MirrorDiffKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MirrorDiffKit/MirrorDiffKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MirrorDiffKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A26EED2520A1A340500D06F8D89DD90E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA752F8787DEBE4AD3BBE48312771791 /* Pods-MirrorDiffKit-for-CocoaPodsTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPodsTests/Pods-MirrorDiffKit-for-CocoaPodsTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MirrorDiffKit_for_CocoaPodsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A386234C278788DE1575F46293E5A2F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6425328E0CFA6AAFD04DA16497366F /* Pods-MirrorDiffKit-for-CocoaPods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MirrorDiffKit-for-CocoaPods/Pods-MirrorDiffKit-for-CocoaPods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MirrorDiffKit_for_CocoaPods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078CE68FBEA8B4AEC20AECB129487584 /* Build configuration list for PBXNativeTarget "Pods-MirrorDiffKit-for-CocoaPodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26EED2520A1A340500D06F8D89DD90E /* Debug */,
+				1E10E9A2AA824608F2B99EACE45E1568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F9C35E8868A1D315FEB80D0C2CA556D /* Build configuration list for PBXNativeTarget "MirrorDiffKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FAF67D8064BCE92D4A268B8D768601B /* Debug */,
+				0EFD68F0616F4A2EF00C825C701A5F92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0DDE4B7D2D8C266949272D25F7707E /* Build configuration list for PBXNativeTarget "Pods-MirrorDiffKit-for-CocoaPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A386234C278788DE1575F46293E5A2F6 /* Debug */,
+				5CE3F8972E096E64CC13A38EBFFE8B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

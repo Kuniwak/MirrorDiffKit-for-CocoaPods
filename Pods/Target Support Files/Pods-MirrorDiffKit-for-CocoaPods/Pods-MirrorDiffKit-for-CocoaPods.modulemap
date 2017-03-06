@@ -1,0 +1,6 @@
+framework module Pods_MirrorDiffKit_for_CocoaPods {
+  umbrella header "Pods-MirrorDiffKit-for-CocoaPods-umbrella.h"
+
+  export *
+  module * { export * }
+}
